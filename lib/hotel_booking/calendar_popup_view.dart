@@ -34,19 +34,6 @@ class _CalendarPopupViewState extends State<CalendarPopupView>
   DateTime? startDate;
   DateTime? endDate;
 
-  @override
-  void initState() {
-    animationController = AnimationController(
-        duration: const Duration(milliseconds: 400), vsync: this);
-    if (widget.initialStartDate != null) {
-      startDate = widget.initialStartDate;
-    }
-    if (widget.initialEndDate != null) {
-      endDate = widget.initialEndDate;
-    }
-    animationController?.forward();
-    super.initState();
-  }
 
   @override
   void dispose() {
